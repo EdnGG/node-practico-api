@@ -1,12 +1,13 @@
 exports.success = function (req, res, message, status) {
   //
   let statusCode = status || 200;
-  let statusMessage = message || "";
+  let statusMessage = message || "hey";
   res.status(status).send({
     error: false,
-    status: status,
-    body: message,
+    status: statusCode,
+    body: statusMessage,
   });
+  // return;
 };
 
 exports.error = function (req, res, message, status) {
@@ -15,7 +16,8 @@ exports.error = function (req, res, message, status) {
   let statusMessage = message || "Internal server error";
   res.status(statusCode).send({
     error: false,
-    status: status,
-    body: message,
+    status: statusCode,
+    body: statusMessage,
   });
+  // return;
 };
