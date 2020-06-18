@@ -10,9 +10,14 @@
   "author": "Eden Gress <gresseden@gmail.com> (https://www.facebook.com/liledn.mexikn)",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1"
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
+    "nanoid": "^3.1.10",
     "nodemon": "^2.0.4"
   }
 }
