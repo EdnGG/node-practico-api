@@ -23,6 +23,13 @@ const check = {
       throw error("No puedes hacer esto, owner es diferente", 401);
     }
   },
+  logged: function (req, owner) {
+    const decoded = decodeHeader(req);
+
+    if (decoded.id !== owner) {
+      throw error("No puedes hacer esto, owner es diferente", 401);
+    }
+  },
 };
 
 function getToken(auth) {
