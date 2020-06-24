@@ -2,11 +2,11 @@ module.exports = {
   api: {
     port: process.env.API_PORT || 3000,
   },
-  jwt: {
-    secret: process.env.JWT_SECRET || "notasecret!",
-  },
   post: {
     port: process.env.POST_PORT || 3002,
+  },
+  jwt: {
+    secret: process.env.JWT_SECRET || "notasecret!",
   },
   mysql: {
     host: process.env.MYSQL_HOST || "remotemysql.com",
