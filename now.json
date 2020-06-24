@@ -9,7 +9,7 @@
       "use": "@now/node"
     },
     {
-      "src": "post/index-post.js",
+      "src": "post/index.js",
       "use": "@now/node"
     }
   ],
@@ -24,7 +24,7 @@
     },
     {
       "src": "/api/post(.*)",
-      "dest": "/post/index-post.js"
+      "dest": "/post/index.js"
     }
   ]
 }
